@@ -226,18 +226,21 @@ p {
 .button2 {
 	width: 15vw;
 	grid-area: button2;
+	top: -8%;
 }
 
 .button3 {
-	top: -6%;
+	top: -8%;
 	right: -5vw;
 	grid-area: button3;
+
 }
 
 .button4 {
+	top: -15%;
 	width: 14vw;
 	grid-area: button4;
-	/* z-index: 3; */
+
 }
 
 .spider {
@@ -310,7 +313,7 @@ p {
 
 	.button4 {
 		width: 20vw;
-		top: 5vh;
+		top: -3%;
 	}
 
 	.contact {
