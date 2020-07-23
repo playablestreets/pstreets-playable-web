@@ -161,7 +161,7 @@ p {
 	width: 100%;
 	height: 100%;
 	background: #8cc9ff;
-	z-index: -1;
+	z-index: 0;
 	overflow: hidden;
 	background-image: url(assets/WEB_COMPLETE.svg), none;
 	background-repeat: no-repeat;
@@ -186,11 +186,12 @@ p {
 	text-align: center;
 	align-content: space-around;
 	margin: auto auto;
+	display:block;
 	}
 
 .contact {
 	grid-area: contact;
-	z-index: 2;
+	/* z-index: 2; */
 	width: 12vw;
 }
 
@@ -212,12 +213,13 @@ p {
 
 .button{
 	position: relative;
-	z-index: 4;
+	/* z-index: 4; */
 	width: 22vw;
 }
 
 .button1 {
 	grid-area: button1;
+	top: -6vh;
 }
 
 .button2 {
@@ -234,7 +236,7 @@ p {
 .button4 {
 	width: 14vw;
 	grid-area: button4;
-	z-index: 3;
+	/* z-index: 3; */
 }
 
 .spider {
@@ -243,13 +245,13 @@ p {
 	left: -10vw;
 	grid-area: spider;
 	width: 30vw;	
-	z-index: 1;
+	/* z-index: 1; */
 }
 
 .fly {
 	position: absolute;
 	width: 6vw;
-	z-index: 0;
+	/* z-index: 0; */
 }
 
 .fly1{
@@ -268,9 +270,10 @@ p {
 }
 
 /* reflow for skinny screens */
-@media (max-aspect-ratio: 7/8) {
+@media (max-aspect-ratio: 19/20) {
   .grid-container{
 
+		/* background-color: lightseagreen; */
 		grid-template-rows: repeat(6, calc(100vh/6));
 		grid-template-columns: repeat(6, calc(100vw/6));
 	
@@ -279,9 +282,8 @@ p {
 		"contact contact empty1 spider spider spider"
 		"empty2 button1 button1 spider spider spider"
 		"empty4 empty4 empty4 button2 button2 empty5"
-		"button3 button3 button3 button4 button4 button4"
-		"empty8 empty8 empty8 button4 button4 button4";
-
+		"button3 button3 button3 empty6 button4 button4"
+		"button3 button3 button3 empty6 button4 button4";
 	}
 
 	.spider {
@@ -297,6 +299,10 @@ p {
 		width: 30vw;
 	}
 
+	.button1{
+		top: 0vh;
+	}
+
 	.button3 {
 		width: 40vw;
 	}
@@ -308,7 +314,6 @@ p {
 
 	.contact {
 		width: 18vw;
-		/* right: 40vw; */
 	}
 
 }
