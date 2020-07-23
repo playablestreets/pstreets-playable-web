@@ -130,6 +130,7 @@ table {
 
 :root {
 	color: rgb(236, 236, 236);
+	background: #8cc9ff;
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -137,7 +138,7 @@ table {
 body {
 	margin: 0;
 	padding: 0;
-	height: 100vh;
+	height: 100%;
 	overflow: hidden;
 }
 
@@ -170,9 +171,9 @@ p {
 }
 
 .grid-container {
-	height: 100vh;
+	height: 100%;
 	display: grid;
-	grid-template-rows: repeat(3, calc(100vh/3));
+	grid-template-rows: repeat(3, calc(100%/3));
 	grid-template-columns: repeat(4, 25vw);
 
 	grid-template-areas: 
@@ -219,7 +220,7 @@ p {
 
 .button1 {
 	grid-area: button1;
-	top: -6vh;
+	top: -6%;
 }
 
 .button2 {
@@ -228,7 +229,7 @@ p {
 }
 
 .button3 {
-	top: -6vh;
+	top: -6%;
 	right: -5vw;
 	grid-area: button3;
 }
@@ -241,7 +242,7 @@ p {
 
 .spider {
 	position: relative;
-	top: -15vh;
+	top: -45%;
 	left: -10vw;
 	grid-area: spider;
 	width: 30vw;	
@@ -255,17 +256,17 @@ p {
 }
 
 .fly1{
-	top: 33vh;
+	top: 33%;
 	left: 5vw;
 }
 
 .fly2{
-	top: 10vh;
+	top: 10%;
 	right: 5vw;
 }
 
 .fly3{
-	top: 85vh;
+	top: 85%;
 	left: 55vw;
 }
 
@@ -274,7 +275,7 @@ p {
   .grid-container{
 
 		/* background-color: lightseagreen; */
-		grid-template-rows: repeat(6, calc(100vh/6));
+		grid-template-rows: repeat(6, calc(100%/6));
 		grid-template-columns: repeat(6, calc(100vw/6));
 	
 		grid-template-areas: 
