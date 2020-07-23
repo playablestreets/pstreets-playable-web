@@ -211,7 +211,8 @@ p {
 }
 
 .button{
-	z-index: 2;
+	position: relative;
+	z-index: 4;
 	width: 22vw;
 }
 
@@ -225,12 +226,15 @@ p {
 }
 
 .button3 {
+	top: -6vh;
+	right: -5vw;
 	grid-area: button3;
 }
 
 .button4 {
 	width: 14vw;
 	grid-area: button4;
+	z-index: 3;
 }
 
 .spider {
@@ -263,6 +267,48 @@ p {
 	left: 55vw;
 }
 
-/* @media (aspect-ratio: ~’3/4') {
-  background: chartreuse;
-} */
+/* reflow for skinny screens */
+@media (max-aspect-ratio: 7/8) {
+  .grid-container{
+
+		grid-template-rows: repeat(6, calc(100vh/6));
+		grid-template-columns: repeat(6, calc(100vw/6));
+	
+		grid-template-areas: 
+		"logo logo logo logo logo logo" 
+		"contact contact empty1 spider spider spider"
+		"empty2 button1 button1 spider spider spider"
+		"empty4 empty4 empty4 button2 button2 empty5"
+		"button3 button3 button3 button4 button4 button4"
+		"empty8 empty8 empty8 button4 button4 button4";
+
+	}
+
+	.spider {
+		top: -10vh;
+		width: 50vw;	
+	}
+
+	.logo {
+		width: 70vw;
+	}
+
+	.button{
+		width: 30vw;
+	}
+
+	.button3 {
+		width: 40vw;
+	}
+
+	.button4 {
+		width: 20vw;
+		top: 5vh;
+	}
+
+	.contact {
+		width: 18vw;
+		/* right: 40vw; */
+	}
+
+}
