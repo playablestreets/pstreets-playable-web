@@ -1,7 +1,0 @@
-ive banged up a super simple kidstruments upload info site on google sites, should work until we get a better solution:
-https://sites.google.com/view/makeakidstrument/home
-
-
-and i reckon for now just direct the 'collaborate with us' button to here: https://www.playablestreets.com/playableweb  
-
-I'll tweak it a bit but it pretty much has all the info needed!

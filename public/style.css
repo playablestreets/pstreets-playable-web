@@ -212,7 +212,7 @@ p {
 
 .button{
 	z-index: 2;
-	width: 20vw;
+	width: 22vw;
 }
 
 .button1 {
@@ -229,6 +229,7 @@ p {
 }
 
 .button4 {
+	width: 14vw;
 	grid-area: button4;
 }
 
@@ -261,3 +262,7 @@ p {
 	top: 85vh;
 	left: 55vw;
 }
+
+/* @media (aspect-ratio: ~’3/4') {
+  background: chartreuse;
+} */
