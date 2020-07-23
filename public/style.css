@@ -169,13 +169,63 @@ p {
 	background-size: cover;
 }
 
-.logo-container{
+.grid-container {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: repeat(3, calc(100vh/3));
+	grid-template-columns: repeat(4, 25vw);
+
+	grid-template-areas: 
+	"contact logo logo empty1" 
+	"button1 button1 spider spider"
+	"button2 button3 empty2 button4";
+
+	background-color: rgba(240, 230, 140, 0.623);
+}
+
+.grid-item{	}
+
+.contact {
+	grid-area: contact;
+	background-color: lightblue;
+}
+.logo {
+	grid-area: logo;
+	background-color: lightcoral;
+}
+.empty1 {
+	grid-area: empty1;
+	background-color: lightcyan;
+}
+.empty2 {
+	grid-area: empty2;
+	background-color: lightcyan;
+}
+.button1 {
+	grid-area: button1;
+	background-color: lightgoldenrodyellow;
+}
+.button2 {
+	grid-area: button2;
+	background-color: lightgreen;
+}
+.button3 {
+	grid-area: button3;
+	background-color: lightpink;
+}
+.button4 {
+	grid-area: button4;
+	background-color: lightsalmon;
+}
+.spider {
+	grid-area: spider;
+	background-color: lightseagreen;
+}
+
+/* .logo-container{
 	position: relative;
 	width: 100%;
 	max-height: 20vw;
-	/* height: 100%; */
-	/* border:  4px solid green; */
-	/* background-color: red; */
 }
 
 .logo {
@@ -183,140 +233,75 @@ p {
 	position: relative;
 	text-align: center;
 	padding: 5vh  20vw  0;
-	/* max-width: 90%; */
 	z-index: 2;
-	/* border:  4px solid blue; */
 }
 
 .spider {
 	box-sizing: border-box;
 	position: absolute;
-	/* border:  4px solid red; */
-	/* top: 100px; */
 	top: 15vh;
 	left: 60vw;
 	width: 25vw;
 	z-index: 1;
 }
 
+.fly {
+	box-sizing: border-box;
+	position: absolute;
+	width: 8vw;
+	z-index: 0;
+}
+
+.fly1{
+	top: 25vh;
+	left: 15vw;
+}
+
+.fly2{
+	top: 44vh;
+	right: 15vw;
+}
+
+.fly3{
+	top: 85vh;
+	left: 35vw;
+}
+
 .contact-us{
 	box-sizing: border-box;
 	position: absolute;
-	/* background-color: red; */
 	width: 12vw;
 	max-width: 200px;
 	top: 5vh;
 	left: 5vh;
-	/* min-width: 10vw; */
 }
 
 
 .content-container{
 	position: relative;
-	background-color: rgba(247, 59, 59, 0.63);
 	height: 100%;
 	width: 100%;
 	
 }
 
 .destination{
-	position: relative;
-	min-width: 100px;
-	max-width: 250px;
-	min-height: 100px;
-	max-height: 250px;
+	position: absolute;
+
 	height: 10vh;
 	width: 30vw;
-	/* background-color: blue; */
 }
 
 .kidstruments{
-	top: 5vh;
+	top: 3vh;
 	left: 25vw;
 }
 
 .the-button{
-	top: 20vh;
-	left: 45vw;
-	height: 10vh;
-	width: 25vw;
+	top: 38vh;
+	left: 40vw;
 }
 
 .sounds-exquisite{
-	top: 10vh;
-	left: 5vw;
-	height: 18vh;
-	width: 40vw;
-}
-
-
-
-@media (orientation: landscape) {
-}
-
-@media (orientation: portrait) {
-	.bg {
-		/* background-size: initial; */
-		/* background-position: center center; */
-  }
-}
-
-
-/* .button {
-	box-sizing: border-box;
-	width: 25%;
-	padding: 10px;
-	width: 50px;
-	height: 50px;
-	line-height: 10px;
-	background-color: rgb(255, 132, 239);
-	font-size: 30px;
-	margin: 10px;
-	border-radius: 20px;
-	border-style: solid;
-	border-color: white;
-	border-width: 2px;
-	color: white;
-	text-align: center;
-	font-weight: bolder;
-	box-shadow: 0px 0px 4px rgb(249, 183, 255);
+	top: 40vh;
+	left: 3vw;
 } */
-
-/* .button.next { */
-	/* position: absolute; */
-	/* margin: auto; */
-	/* right: 10px; */
-	/* bottom: 10px; */
-	/* left: 10px; */
-	/* top: 10px;  */
-/* } */
-
-/* .button:hover { */
-	/* background-color: rgb(250, 159, 250); */
-/* } */
-/* .button:active { */
-	/* background-color: rgb(246, 207, 247); */
-	/* font-size: 28px; */
-	/* border-width: 10px; */
-/* } */
-
-/* .info {
-	width: 300px;
-	margin: auto;
-	text-align: center;
-	font-weight: bolder;
-	color: rgb(247, 107, 228);
-} */
-
-/* .ui {
-	position: absolute;
-	width: 100vw;
-	/* bottom: 5vh;
-  right: 5vw; */
-	/* top: 0; */
-	/* left: 5vw; */
-	/* display: flex; */
-	/* flex-direction: row; */
-	/* justify-content: space-evenly; */
-	/* background-color: rgba(139, 0, 139, 0.118); */
-/*  
