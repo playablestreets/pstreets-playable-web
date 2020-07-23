@@ -130,7 +130,7 @@ table {
 
 :root {
 	color: rgb(236, 236, 236);
-	/* box-sizing: border-box; */
+	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -180,128 +180,84 @@ p {
 	"button1 button1 spider spider"
 	"button2 button3 empty2 button4";
 
-	background-color: rgba(240, 230, 140, 0.623);
 }
 
-.grid-item{	}
+.grid-item{
+	text-align: center;
+	align-content: space-around;
+	margin: auto auto;
+	}
 
 .contact {
 	grid-area: contact;
-	background-color: lightblue;
+	z-index: 2;
+	width: 12vw;
 }
+
 .logo {
+	z-index: 2;
+	width: 50vw;
 	grid-area: logo;
-	background-color: lightcoral;
 }
+
 .empty1 {
 	grid-area: empty1;
 	background-color: lightcyan;
 }
+
 .empty2 {
 	grid-area: empty2;
 	background-color: lightcyan;
 }
+
+.button{
+	z-index: 2;
+	width: 20vw;
+}
+
 .button1 {
 	grid-area: button1;
-	background-color: lightgoldenrodyellow;
 }
+
 .button2 {
+	width: 15vw;
 	grid-area: button2;
-	background-color: lightgreen;
 }
+
 .button3 {
 	grid-area: button3;
-	background-color: lightpink;
 }
+
 .button4 {
 	grid-area: button4;
-	background-color: lightsalmon;
 }
+
 .spider {
+	position: relative;
+	top: -15vh;
+	left: -10vw;
 	grid-area: spider;
-	background-color: lightseagreen;
-}
-
-/* .logo-container{
-	position: relative;
-	width: 100%;
-	max-height: 20vw;
-}
-
-.logo {
-	box-sizing: border-box;
-	position: relative;
-	text-align: center;
-	padding: 5vh  20vw  0;
-	z-index: 2;
-}
-
-.spider {
-	box-sizing: border-box;
-	position: absolute;
-	top: 15vh;
-	left: 60vw;
-	width: 25vw;
+	width: 30vw;	
 	z-index: 1;
 }
 
 .fly {
-	box-sizing: border-box;
 	position: absolute;
-	width: 8vw;
+	width: 6vw;
 	z-index: 0;
 }
 
 .fly1{
-	top: 25vh;
-	left: 15vw;
+	top: 33vh;
+	left: 5vw;
 }
 
 .fly2{
-	top: 44vh;
-	right: 15vw;
+	top: 10vh;
+	right: 5vw;
 }
 
 .fly3{
 	top: 85vh;
-	left: 35vw;
+	left: 55vw;
 }
-
-.contact-us{
-	box-sizing: border-box;
-	position: absolute;
-	width: 12vw;
-	max-width: 200px;
-	top: 5vh;
-	left: 5vh;
-}
-
-
-.content-container{
-	position: relative;
-	height: 100%;
-	width: 100%;
-	
-}
-
-.destination{
-	position: absolute;
-
-	height: 10vh;
-	width: 30vw;
-}
-
-.kidstruments{
-	top: 3vh;
-	left: 25vw;
-}
-
-.the-button{
-	top: 38vh;
-	left: 40vw;
-}
-
-.sounds-exquisite{
-	top: 40vh;
-	left: 3vw;
-} */
