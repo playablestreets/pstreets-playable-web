@@ -216,17 +216,29 @@ p {
 	position: relative;
 	/* z-index: 4; */
 	width: 22vw;
+	
 }
+
+
+
 
 .button1 {
 	grid-area: button1;
 	top: -6%;
 }
 
+.button1:hover{
+	width: 23vw;
+}
+
 .button2 {
 	width: 15vw;
 	grid-area: button2;
 	top: -8%;
+}
+
+.button2:hover{
+	width: 16vw;
 }
 
 .button3 {
@@ -236,12 +248,20 @@ p {
 
 }
 
+.button3:hover{
+	width: 24vw;
+}
+
 .button4 {
 	top: -15%;
 	left: -10%;
 	width: 16vw;
 	grid-area: button4;
 
+}
+
+.button4:hover{
+	width: 17vw;
 }
 
 .spider {
@@ -304,22 +324,39 @@ p {
 		width: 30vw;
 	}
 
+
 	.button1{
 		top: 0vh;
+	}
+
+	.button1:hover{
+		width: 32vw;
 	}
 
 	.button3 {
 		width: 40vw;
 	}
 
+	.button3:hover{
+		width: 42vw;
+	}
+
 	.button2 {
 		width: 26vw;
+	}
+
+	.button2:hover{
+		width: 28vw;
 	}
 
 	.button4 {
 		width: 28vw;
 		top: -3%;
 		left: 0%;
+	}
+
+	.button4:hover{
+		width: 30vw;
 	}
 
 	.contact {
