@@ -178,7 +178,7 @@ p {
 
 	grid-template-areas: 
 	"contact logo logo empty1" 
-	"button1 button1 spider spider"
+	"button1 button1 spider button5"
 	"button2 button3 empty2 button4";
 
 }
@@ -220,8 +220,6 @@ p {
 }
 
 
-
-
 .button1 {
 	grid-area: button1;
 	top: -6%;
@@ -257,10 +255,21 @@ p {
 	left: -10%;
 	width: 16vw;
 	grid-area: button4;
-
 }
 
 .button4:hover{
+	width: 17vw;
+}
+
+.button5 {
+	top: -15%;
+	left: -10%;
+	width: 16vw;
+	grid-area: button5;
+}
+
+
+.button5:hover{
 	width: 17vw;
 }
 
@@ -306,9 +315,9 @@ p {
 		"logo logo logo logo logo logo" 
 		"contact contact empty1 spider spider spider"
 		"empty2 button1 button1 spider spider spider"
-		"empty4 empty4 empty4 button2 button2 empty5"
-		"button3 button3 button3 empty6 button4 button4"
-		"button3 button3 button3 empty6 button4 button4";
+		"button5 empty4 empty4 button2 button2 empty5"
+		"button5 button3 button3 button3 button4 button4"
+		"empty6 button3 button3 button3 button4 button4";
 	}
 
 	.spider {
@@ -335,6 +344,7 @@ p {
 
 	.button3 {
 		width: 40vw;
+		top:5vh;
 	}
 
 	.button3:hover{
@@ -357,6 +367,16 @@ p {
 
 	.button4:hover{
 		width: 30vw;
+	}
+
+	.button5 {
+		width: 28vw;
+		top: 3vh;
+		left: 2vw;
+	}
+
+	.button5:hover{
+		width:30vw;
 	}
 
 	.contact {
