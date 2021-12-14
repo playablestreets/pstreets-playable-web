@@ -243,11 +243,12 @@ p {
 	top: -8%;
 	right: -5vw;
 	grid-area: button3;
-	width: 18vw;
+	width: 28vw;
 }
 
 .button3:hover{
-	width: 20vw;
+	width: 32vw;
+	right: -2.5vw;
 }
 
 .button4 {
@@ -343,11 +344,12 @@ p {
 	}
 
 	.button3 {
-		width: 28vw;
+		width: 48vw;
 	}
 
 	.button3:hover{
-		width: 32vw;
+		width: 52vw;
+		right: -8%;
 	}
 
 	.button2 {
