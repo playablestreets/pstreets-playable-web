@@ -193,7 +193,14 @@ p {
 .contact {
 	grid-area: contact;
 	/* z-index: 2; */
-	width: 4vw;
+	width: 12vw;
+}
+
+.contact img {
+	width: 33%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
 }
 
 .logo {
@@ -452,7 +459,7 @@ p {
 	}
 
 	.contact {
-		width: 6vw;
+		width: 18vw;
 	}
 
 }
