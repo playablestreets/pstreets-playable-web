@@ -193,7 +193,7 @@ p {
 .contact {
 	grid-area: contact;
 	/* z-index: 2; */
-	width: 12vw;
+	width: 4vw;
 }
 
 .logo {
@@ -309,19 +309,19 @@ p {
 .fly1{
 	top: 33%;
 	left: 5vw;
-	animation: fly-buzz-1 4s ease-in-out infinite;
+	animation: fly-buzz-1 12s ease-in-out infinite;
 }
 
 .fly2{
 	top: 10%;
 	right: 5vw;
-	animation: fly-buzz-2 5s ease-in-out infinite;
+	animation: fly-buzz-2 15s ease-in-out infinite;
 }
 
 .fly3{
 	top: 85%;
 	left: 55vw;
-	animation: fly-buzz-3 4.5s ease-in-out infinite;
+	animation: fly-buzz-3 13.5s ease-in-out infinite;
 }
 
 @keyframes fly-wing {
@@ -452,7 +452,7 @@ p {
 	}
 
 	.contact {
-		width: 18vw;
+		width: 6vw;
 	}
 
 }
