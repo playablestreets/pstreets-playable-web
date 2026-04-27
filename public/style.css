@@ -309,49 +309,61 @@ p {
 .fly1{
 	top: 33%;
 	left: 5vw;
-	animation: fly-buzz-1 7s ease-in-out infinite;
+	animation: fly-buzz-1 4s ease-in-out infinite;
 }
 
 .fly2{
 	top: 10%;
 	right: 5vw;
-	animation: fly-buzz-2 9s ease-in-out infinite;
+	animation: fly-buzz-2 5s ease-in-out infinite;
 }
 
 .fly3{
 	top: 85%;
 	left: 55vw;
-	animation: fly-buzz-3 8s ease-in-out infinite;
+	animation: fly-buzz-3 4.5s ease-in-out infinite;
 }
 
 @keyframes fly-wing {
-	from { transform: translate(0, 0) rotate(-3deg); }
-	to   { transform: translate(0.3vw, -0.2vw) rotate(3deg); }
+	from { transform: translate(0, 0) rotate(-6deg); }
+	to   { transform: translate(0.4vw, -0.3vw) rotate(6deg); }
 }
 
 @keyframes fly-buzz-1 {
 	0%   { transform: translate(0, 0); }
-	20%  { transform: translate(6vw, -3vh); }
-	40%  { transform: translate(2vw, 5vh); }
-	60%  { transform: translate(-3vw, 2vh); }
-	80%  { transform: translate(4vw, -4vh); }
+	10%  { transform: translate(12vw, -8vh); }
+	20%  { transform: translate(20vw, 4vh); }
+	30%  { transform: translate(8vw, 14vh); }
+	40%  { transform: translate(-6vw, 10vh); }
+	50%  { transform: translate(-14vw, -4vh); }
+	60%  { transform: translate(-8vw, -12vh); }
+	70%  { transform: translate(4vw, -16vh); }
+	80%  { transform: translate(16vw, -6vh); }
+	90%  { transform: translate(6vw, 6vh); }
 	100% { transform: translate(0, 0); }
 }
 
 @keyframes fly-buzz-2 {
 	0%   { transform: translate(0, 0); }
-	25%  { transform: translate(-5vw, 4vh); }
-	50%  { transform: translate(-2vw, -3vh); }
-	75%  { transform: translate(-7vw, 1vh); }
+	12%  { transform: translate(-14vw, 10vh); }
+	24%  { transform: translate(-22vw, -2vh); }
+	36%  { transform: translate(-10vw, 16vh); }
+	48%  { transform: translate(-26vw, 6vh); }
+	60%  { transform: translate(-18vw, 22vh); }
+	72%  { transform: translate(-4vw, 14vh); }
+	84%  { transform: translate(-12vw, -6vh); }
 	100% { transform: translate(0, 0); }
 }
 
 @keyframes fly-buzz-3 {
 	0%   { transform: translate(0, 0); }
-	15%  { transform: translate(4vw, -5vh); }
-	35%  { transform: translate(-3vw, -8vh); }
-	55%  { transform: translate(5vw, -2vh); }
-	75%  { transform: translate(-2vw, 3vh); }
+	10%  { transform: translate(10vw, -14vh); }
+	22%  { transform: translate(-8vw, -22vh); }
+	34%  { transform: translate(16vw, -10vh); }
+	46%  { transform: translate(-12vw, -28vh); }
+	58%  { transform: translate(20vw, -6vh); }
+	70%  { transform: translate(-6vw, 8vh); }
+	82%  { transform: translate(8vw, -18vh); }
 	100% { transform: translate(0, 0); }
 }
 
